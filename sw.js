@@ -7,7 +7,7 @@ self.addEventListener("install", async event => {
     ".index.html",
     ".style.css", 
     ".pendaftaran.html",
-    ".img/kampus.jpg"
+    ".img/kampus.png"
   ]); 
 });
  
