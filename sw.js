@@ -3,7 +3,6 @@ self.addEventListener("install", async event => {
   const cache = await caches.open("pwa-assets");
   // it stores all resources on first SW install
   cache.addAll([
-    "/", 
     ".app.js", 
     ".index.html",
     ".style.css", 
