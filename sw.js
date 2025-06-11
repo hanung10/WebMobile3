@@ -4,11 +4,11 @@ self.addEventListener("install", async event => {
   // it stores all resources on first SW install
   cache.addAll([
     "/", 
-    "app.js", 
-    "index.html",
-    "style.css", 
-    "pendaftaran.html",
-    "img/kampus.jpg"
+    "./app.js", 
+    "./index.html",
+    "./style.css", 
+    "./pendaftaran.html",
+    "./img/kampus.jpg"
   ]); 
 });
  
