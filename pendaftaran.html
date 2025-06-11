@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Bagian head untuk melakukan pengaturan karakter,
+     viewport untuk responsif,
+     judul halaman dan pemanggilan file CSS eksternal -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigasi utama pada bagian atas halaman, menggunakan Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand">Pendaftaran Mahasiswa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontak Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulir pendaftaran mahasiswa dengan grid Bootstrap 2 kolom dan validasi HTML -->
+    <div class="container my-5">
+        <h2 class="mb-4">Formulir Pendaftaran Mahasiswa Baru</h2>
+        <form>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="nama" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="nama" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="telepon" class="form-label">No. Telepon</label>
+                    <input type="tel" class="form-control" id="telepon" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="prodi" class="form-label">Program Studi</label>
+                    <select class="form-select" id="prodi" required>
+                        <option value="">Pilih Program Studi</option>
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Komputer</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Kirim Pendaftaran</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer di bagian bawah halaman -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        &copy; 2025 Hanung Aryo
+    </footer>
+
+    <!-- Pemanggilan script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
